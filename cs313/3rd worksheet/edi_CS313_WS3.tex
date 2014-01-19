@@ -1,0 +1,34 @@
+\documentclass[]{report}
+%\documentclass[10pt,a4paper,headinclude=true,twoside]{report}
+\usepackage[latin1]{inputenc}
+\usepackage[a4paper]{geometry}
+\usepackage{a4wide}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{pdflscape} % dlia landscape orientation 
+\hypersetup{colorlinks,citecolor=black,filecolor=black,linkcolor=black,urlcolor=black}
+\usepackage{float}
+\usepackage{setspace}
+\usepackage{titlesec}
+
+
+\begin{document}
+%\onehalfspacing
+\title{CS31310: Process for project}
+\author{Edgar Ivanov\\ edi@aber.ac.uk \\ Department of Computer Science, Aberystwyth University}
+\date{\today}
+\maketitle
+\section*{Project outline}
+For my final year I have chosen project which will have both hardware and software parts. The aim of the project is to build additional unit which will ensure that camera mounted on the rover is always in stable position. Currently there is a Pan-and-Tilt Unit (PTU) which controls the camera and ensures that it is in a stable position. It uses gyroscopes to acquire current position in the space and based on data from them adjust position of the camera. However those gyroscopes are not perfect and tend to drift over the time as well as provide wrong data at the different temperature. 
+
+I will be building additional unit which will acquire current position using the accelerometer, which will be more accurate over the time, and will provide PTU with calibration data.
+
+\section*{Process}
+At this point it is a tough task for me to choose a right development methodology for my project. There are so many of them and I have very limited experience of using some of them; and anyway I will most probably end up with code and fix approach.
+
+\bibliographystyle{ieeetr}
+\bibliography{bibl}
+\end{document}
